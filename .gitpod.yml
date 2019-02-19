@@ -4,8 +4,8 @@
 # Ports to expose on workspace startup (optional)
 ports:
   - port: 8000
-    onOpen: notify
+    onOpen: open-browser
 
 # Command to start on workspace startup (optional)
-# tasks:
-#   - command: "yarn install && yarn build"
+tasks:
+  - command: "yarn install && npm run develop"
